@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        border: 2px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .para{
+        color: green;
+    }
+
+    .span1{
+        color: red;
+        font-size: 50px;
+    }
+
+    .span2{
+        color: red;
+    }
+
+    .choix{
+        color: green;
+    }
+
+    input{
+        width: 50px;
+    }
+
+    button{
+        width: 100%;
+        background-color: rgb(79, 213, 213);
+        border: none;
+        padding: 12px;
+        color: white;
+    }
+
+    button:hover{
+        background-color: rgb(19, 114, 114);
+    }
+</style>
+<body>
+    
+    <h1>Devinette</h1>
+    <div class="container">
+        <h2>Trouver le bon nombre</h2>
+
+        <div>
+            <p class="para">Vous devez trouver un nombre entre 10 et 100. Vous n'avez que <span class="span1" id="tenEssai">10</span> esais.</p>
+        </div>
+        <div>
+            <p>Entrez votre nombre <span class="span2" id="monNombre">Non, le nombre est plus grand</span></p>
+        </div>
+        <div>
+            <p class="choix">Votre choix:
+            <input type="number" id="inputEssai">
+            </p>
+        </div>
+        <button type="submit" id="buttonEssai">Essayer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
